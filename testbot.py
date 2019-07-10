@@ -40,4 +40,5 @@ async def on_message(message):
         await client.send_message(message.channel,'web je http://gbrothers.pageride.cz')
     if message.content.startswith('royaleapi'):
         await client.send_message(message.channel,'https://royaleapi.com/clan/8V2CUQLU')
-client.run('NTg3Njk5ODk3MjYwODM0ODE2.XSYbnw.to2sqD4wrsOxwABHHGX1k2I4J0Y')
+        
+client.run('NTg3Njk5ODk3MjYwODM0ODE2.XSYf0g.usniWWOaVBIfQvsTP_b6T9NZZGM')
