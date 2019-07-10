@@ -18,7 +18,7 @@ async def on_member_join(member):
     await client.send_message(member, 'Turnaj se odehrává zde: http://bit.ly/gb_tclan_join a pravidla nalezneš zde: http://gbrothers.pageride.sk/turnaj/pravidla')
     print('Sent message to ' + member.name)
 async def on_ready():
-    await client.change_presence(game=Game(name='      '))
+    await client.change_presence(game=Game(name='/help'))
     print("Ready, Freddy") 
 
 
@@ -26,7 +26,7 @@ async def on_ready():
 async def on_message(message):
     if message.content == '':
         await client.send_message(message.channel,'')
-    if message.content == '/pravidla':
+    if message.content == '!pravidla':
         await client.send_message(message.channel,'Pravidla turnaje nejdeš zde:  http://gbrothers.pageride.sk/turnaj')
     if ('piča') in message.content:
        await client.delete_message(message)
@@ -40,6 +40,4 @@ async def on_message(message):
         await client.send_message(message.channel,'web je http://gbrothers.pageride.cz')
     if message.content.startswith('royaleapi'):
         await client.send_message(message.channel,'https://royaleapi.com/clan/8V2CUQLU')
-client.run('NTI4NjcwNTMzNTQyMzQ2NzU0.DwlqcQ.g5rWY8vOKE4TG4qwQZUunhgO0M8')
-
-   
+client.run('NTg3Njk5ODk3MjYwODM0ODE2.XSYbnw.to2sqD4wrsOxwABHHGX1k2I4J0Y')
